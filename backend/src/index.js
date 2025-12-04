@@ -6,8 +6,21 @@ import connnectDB from "./db/index.js"
 dotenv.config({
     path: './env'
 })
-connnectDB();
+connnectDB()
+.then(()=>{
+    
+    app.on("error", (error) =>{
+        console.log("ERROR IN CONNECTIONDB",error);
+        throw error
+    })
 
+    app.listen(process.env.PORT || 8000, () =>{
+        console.log(`server is running on port : ${process.env.PORT}`)
+    })
+})
+.catch((error)=>{
+    console.log("MONGODB CONNECTIONS failed", error);
+})
 
 /*
 import express from "express"
