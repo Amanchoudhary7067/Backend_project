@@ -1,6 +1,5 @@
 import {v2 as cloudinary} from 'cloudinary';
 import fs from 'fs'; // file system module to handle file operations
-import { loadEnvFile } from 'process';
 
 // Configuration
     cloudinary.config({ 
