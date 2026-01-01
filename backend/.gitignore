@@ -1,0 +1,33 @@
+# ===== Environment Variables =====
+.env
+.env.local
+.env.development
+.env.production
+
+# ===== Node Modules =====
+node_modules/
+
+# ===== Logs =====
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ===== OS Files =====
+.DS_Store
+Thumbs.db
+
+# ===== Build Outputs =====
+dist/
+build/
+
+# ===== Editor / IDE =====
+.vscode/
+.idea/
+
+# ===== Coverage =====
+coverage/
+
+# ===== Misc =====
+*.pem
